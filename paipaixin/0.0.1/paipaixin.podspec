@@ -1,6 +1,7 @@
 
 Pod::Spec.new do |s|
 
+
   s.name         = "paipaixin"
   s.version      = "0.0.1"
   s.summary      = "A short description of PPX."
@@ -18,8 +19,8 @@ Pod::Spec.new do |s|
 
 
 
-  s.source       = { :git => "https://github.com/JerryXu008/paipaixin.git", :tag => "0.0.1" }
-
+#s.source       = { :git => "https://github.com/JerryXu008/paipaixin.git", :tag => "0.0.2" }
+s.source       = { :git => "https://github.com/JerryXu008/paipaixin.git", :tag => "1.0.0" }
 
   s.platform     = :ios, '8.0'
 
@@ -34,9 +35,17 @@ Pod::Spec.new do |s|
   s.resource     = 'Source/PPCSDK.bundle'
   s.libraries    = 'sqlite3','z.1.2.5'
   s.vendored_frameworks = ['Source/PPCSDK.framework']
-   
-
-
   s.dependency 'hbuilder'
-#s.dependency 'MJRefresh', '~> 3.1.0'
+
+
+  #s.dependency 'MJRefresh', '~> 3.1.0'
+
+
+
+#s.subspec 'DataModel' do |dataModel|
+#dataModel.source_files = "Source",'Source/*.{h,m}'
+#dataModel.public_header_files = "Source",'Source/*.{h}'
+#end
+
+
 end
